@@ -1,0 +1,204 @@
+/* This is CSS file which is used to define the style of our Express application*/
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', Arial, sans-serif;
+    background: linear-gradient(135deg, #615e5c, #e0e7ff);
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Header */
+  header {
+    background: linear-gradient(to right, #070707, #3a3836);
+    color: white;
+    padding: 2rem 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  
+  nav {
+    margin-top: 1rem;
+  }
+  
+  nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  nav a:hover {
+    color: #dbeafe;
+    transform: scale(1.1);
+  }
+  
+  /* Main Content */
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+    animation: fadeIn 1s ease-in;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  .hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Featured Section */
+  .featured {
+    margin: 40px 0;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .featured h3 {
+    font-size: 1.8rem;
+    color: #696662;
+    margin-bottom: 10px;
+  }
+  
+  .featured p {
+    font-size: 1.1rem;
+    color: #666;
+  }
+  
+  .featured img {
+    margin-top: 15px;
+    border-radius: 10px;
+    max-width: 200px;
+  }
+  
+  /* Quote Section Styling */
+  .quote {
+    margin: 40px 0;
+    padding: 20px;
+    font-style: italic;
+    color: #444;
+    background: #f9fafb;
+    border-left: 5px solid #4e535d;
+    border-radius: 5px;
+  }
+  
+  /* Button */
+  button {
+    padding: 12px 30px;
+    background: linear-gradient(to right, #414346, #bfc6d0);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    box-shadow: 0 4px 15px rgba(206, 207, 208, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(206, 211, 215, 0.6);
+    background: linear-gradient(to right, #4f4949, #a4a5a7);
+  }
+  
+  /* Data Container which is mainly shop page */
+  #dataContainer {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    padding: 0 20px;
+  }
+  
+  /* Books section */
+  .item {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #e5e7eb;
+    text-align: left;
+  }
+  
+  .item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  }
+  
+  
+  .item h3 {
+    font-size: 1.5rem;
+    color: #2d706b;
+    margin-bottom: 10px;
+  }
+  
+  .item p {
+    font-size: 1rem;
+    color: #666;
+    margin: 5px 0;
+  }
+  
+  .item p strong {
+    color: #333;
+  }
+  
+  /* Responsive design to adjust layout */
+  @media (max-width: 768px) {
+    header h1 {
+      font-size: 1.8rem;
+    }
+    
+    nav a {
+      margin: 0 10px;
+      font-size: 0.9rem;
+    }
+    
+    button {
+      padding: 10px 20px;
+      font-size: 1rem;
+    }
+    
+    #dataContainer {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+  }
+  
+  /* Utility lasses to apply specific styles */
+  .btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: linear-gradient(to right, #34373a, #d7d7e4);
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: transform 0.3s ease;
+  }
+  
+  .btn:hover {
+    transform: translateY(-3px);
+  }

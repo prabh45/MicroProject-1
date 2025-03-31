@@ -1,0 +1,50 @@
+[
+    {
+      "id": 1,
+      "title": "The Cosmic Code",
+      "author": "J. Smith",
+      "description": "A sci-fi thriller unraveling the secrets of the universe.",
+      "genre": "Science Fiction",
+      "pages": 350
+    },
+    {
+      "id": 2,
+      "title": "Echoes of Time",
+      "author": "L. Harper",
+      "description": "An eerie story of love that spans ages.",
+      "genre": "Fantasy",
+      "pages": 280
+    },
+    {
+      "id": 3,
+      "title": "Code & Conquer",
+      "author": "M. Turing",
+      "description": "Master programming with this hands-on guide.",
+      "genre": "Non-Fiction",
+      "pages": 400
+    },
+    {
+      "id": 4,
+      "title": "The Silent Realm",
+      "author": "K. Rowan",
+      "description": "A captivating mystery in a vanished world.",
+      "genre": "Mystery",
+      "pages": 320
+    },
+    {
+      "id": 5,
+      "title": "Stars Above",
+      "author": "E. Vega",
+      "description": "A poetic voyage throughut the night sky.",
+      "genre": "Poetry",
+      "pages": 150
+    },
+    {
+      "id": 6,
+      "title": "AI Unleashed",
+      "author": "R. Nexus",
+      "description": "Examine artificial intelligence's prospects.",
+      "genre": "Non-Fiction",
+      "pages": 380
+    }
+  ]
